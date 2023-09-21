@@ -1,4 +1,0 @@
-Proverka
-dsfafd
-asfdaf
-sss
