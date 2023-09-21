@@ -33,3 +33,11 @@ class MerkleTree:
             nodes = new_level
 
         return nodes[0] #return the root node of the merkle tree
+
+    def addTransaction(self, transaction_data):    #func to add new transaction to merkle
+        self.trans.append(transaction_data)
+        self.root = self.createTree(self.trans) #redoing the tree with updated list
+
+    def getRootHash(self):   #func to retrieve hash of root node
+        return self.root.data if self.root else None
+        pass        
