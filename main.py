@@ -19,7 +19,7 @@ def main():   #creating 2 instances for case
             print("Successfully\n")
         
         elif choice == "2":
-            if len(merkle_tree.transactions) == 0:         #if there is no transactions we cant create (mine) new block
+            if len(merkle_tree.trans) == 0:         #if there is no transactions we cant create (mine) new block
                 print("There is no transactions yet!")
             else:
                 new_block = Block(len(blockchain.chain), blockchain.chain[-1].curr_hash, int(time.time()), merkle_tree.root) #creating a new block
